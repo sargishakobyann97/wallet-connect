@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../../assets/fonts/Montserrat-Medium/Montserrat-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../../assets/fonts/Montserrat-Medium/Montserrat-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../assets/fonts/Montserrat-Medium/Montserrat-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../assets/fonts/Montserrat-Medium/Montserrat-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../assets/fonts/Montserrat-Medium/Montserrat-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../assets/fonts/Montserrat-Medium/Montserrat-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.aside-container {
+    display: inline-block;
+    min-height: calc(100vh - 96px);
+    position: relative;
+    & div:nth-child(1),div:nth-child(2) {
+        & button {
+            display: flex;
+            // justify-content: center;
+            padding-left: 16px;
+            cursor: pointer;
+            align-items: center;
+            font-family: 'Montserrat-Bold';
+            gap: 16px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: -0.023em;
+            color: #0A1539;
+            transition-duration: 0.1s;
+        }
+        & button:hover {
+            color: #5078E6;
+        }
+        width: 204px;
+        min-height: 198px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        *{
+            border: none;
+            background-color: #fff;
+        }
+
+    }
+    & div:nth-child(2){
+        margin-top: 10px;
+    }
+    & div:nth-child(3){
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 205px;
+        height: 58px;
+        border: 1px solid #DFE3F0;
+        border-radius: 12px;
+        padding: 14px;
+        & img {
+            position: absolute;
+            left: 11px;
+        }
+        & span {
+            position: absolute;
+        }
+        & span:nth-child(2) {
+            font-family: 'Montserrat-Medium',sans-serif;
+            left: 50px;
+            top: 15px;
+            font-weight: 500;
+            font-size: 10px;
+            color: #9095A5;
+        }
+        & span:nth-child(3) {
+            font-family: 'Montserrat-Medium',sans-serif;
+            left: 150px;
+            top: 15px;
+            font-weight: 500;
+            font-size: 10px;
+            color: #9095A5;
+        }
+        & span:nth-child(4),span:nth-child(6){
+            left: 50px;
+            top: 28px;
+            font-size: 14px;
+            letter-spacing: -0.01em;
+            color: #0A1539;
+        }
+        & span:nth-child(5) {
+            width: 33px;
+            height: 13px;
+            left: 121px;
+            top: 30px;
+            background: #5EC47A;
+            border-radius: 4px;
+            font-size: 9px;
+            color: #BAEEC9;
+            display: flex;
+            justify-content: center;
+            
+        }
+        & span:nth-child(6) {
+            left: 161px;
+            top: 28px;
+        }
+    }
+}
+
+
+
+
+
+

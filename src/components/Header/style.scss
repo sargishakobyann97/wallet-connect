@@ -1,4 +1,51 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../../assets/fonts/Montserrat/Montserrat-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../../assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../assets/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../assets/fonts/Montserrat/Montserrat-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../assets/fonts/Montserrat/Montserrat-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 .header{
     height: 78px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    & div:nth-child(1) {
+        & span{
+             color: #5078E6;
+             font-size: 26px;
+        }
+        display: flex;
+        height: 100%;
+        gap: 12px;
+        align-items: center;
+    }
+    & div:nth-child(2) {
+        & button{
+            width: 165px;
+            height: 39px;
+            background-color: #78A0FF;
+            font-size: 14px;
+            font-family: 'Montserrat-Bold';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            color: #fff;
+            border-radius: 10px;
+            border: none;
+            margin-right: 40px;
+            cursor: pointer;
+        }   
+        & img{
+            cursor: pointer;
+        }    
+        display: flex;
+        height: 100%;
+        gap: 15px;
+        align-items: center;
+    }
 }
