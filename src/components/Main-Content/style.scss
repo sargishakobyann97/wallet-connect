@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../../assets/fonts/Montserrat/Montserrat-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../../assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../assets/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../assets/fonts/Montserrat/Montserrat-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../assets/fonts/Montserrat/Montserrat-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+.main-content{
+    display: inline-block;
+    background: #FFFFFF;
+    border-radius: 12px;
+    position: absolute;
+    padding: 27px;
+    top: 78px;
+    left: 229px;
+    min-width: calc(100% - 241px);
+    min-height: calc(100vh - 96px);
+    & .content-header{
+        width: 100%;
+        height: 143px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & div:nth-child(1) span{
+            margin-top: 18px;
+            margin-left: 16px;
+            letter-spacing: -0.01em;
+            color: #BAEEC9;
+            font-family: 'Montserrat-Bold';
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 9px;
+            align-content: center;
+            width: 61px;
+            height: 20.33px;
+            background: #5EC47A;
+            border-radius: 5px;
+        }
+        & div:nth-child(1) .polygon-top{
+            left: 30px;
+            top: 7px;
+            position: relative;
+        }
+        & div:nth-child(1) .polygon-bottom{
+            left: 10px;
+            top: 10px;
+            position: relative;
+        }
+        & .empty-wallet-wrapper{
+            width: 63px;
+            height: 63px;
+            background: #F7F9FC;
+            border-radius: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        & div{
+            display: flex;
+            align-items: center;
+        }
+        & div:nth-child(1) h1{
+            font-family: 'Montserrat-Bold';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 110%;
+            letter-spacing: -0.01em;
+            color: #0A1539;
+            margin-top: 18px;
+            margin-left: 27px;
+            position: relative;
+        }
+        & div:nth-child(1) h1::before{
+            content: 'total balance';
+            font-family: 'Montserrat-Bold';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 180%;
+            color: #9095A5;
+            position: absolute;
+            top: -25px;
+        }
+        & div:nth-child(2) button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            color:#0A1539;
+            width: 155px;
+            height: 50px;
+            background: #F7F8FB;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin-left: 15px;
+            font-family:'Montserrat-Bold', sans-serif ;
+        }
+        & div:nth-child(2) button:nth-child(3) {           
+            background: #5078E5;
+            color: #FFFFFF;
+        }
+    }
+    & .main {
+        display: grid;
+        gap: 10px;
+        grid-template: 1fr / 1fr 494px ;
+        & .your-tokens {
+            min-height: calc(100vh - 293px) ;
+            background-color: #F7F9FC;
+            grid-area: 1/1/2/2;
+            border-radius: 12px;
+        }
+        & .your-nft {
+            background-color: #F7F9FC;
+            border-radius: 12px;
+            min-height: calc(100vh - 293px) ;
+            grid-area: 1/2/2/3;
+            padding: 0 31px;
+            div:nth-child(1){
+                & span{
+                    font-family: 'Montserrat-Bold';
+                    font-size: 14px;
+                    color: #9095A5;
+                }
+                & span:nth-child(2){
+                    color: #5078E6;
+                    cursor: pointer;
+                }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 63px;
+            }
+        }
+        & .nft-items-wrapper{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 9px;
+            & .nft-item{
+                width: 129px;
+                height: 165px !important;
+                position: relative;
+                border-radius: 10px;
+            }
+            & .nft-item:nth-child(1){
+                background: url('../../assets/images/your-nft/nft-img-1.svg');
+            }
+            & .nft-item:nth-child(2){
+                background: url('../../assets/images/your-nft/nft-img-2.svg');
+            }
+            & .nft-item:nth-child(3){
+                background: url('../../assets/images/your-nft/nft-img-3.svg');
+            }
+            & .nft-item:nth-child(4){
+                background: url('../../assets/images/your-nft/nft-img-4.svg');
+            }
+            & .nft-item:nth-child(5){
+                background: url('../../assets/images/your-nft/nft-img-5.svg');
+            }
+            & .nft-item span{
+                position: absolute;
+                height: 22px;
+                padding: 0 6px;
+                left: 7px;
+                bottom: 7px;
+                background: #FFFFFF;
+                border-radius: 4px;
+                color: #0A1539 !important;
+                font-size: 12px !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    
+}
