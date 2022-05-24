@@ -8,11 +8,11 @@ import polygonBottom from '../../assets/images/polygon-bottom.svg'
 import exportSrc from '../../assets/images/export.svg'
 import "./style.scss"
 
-function MainContent() {
+function MainContent({ setShowReceiveModal }) {
     return (
         <div className="main-content">
             <div className="content-header">
-                <div>
+                <dshowReceiveModaliv>
                     <div className="empty-wallet-wrapper">
                         <img src={emptyWalletTotalSrc} alt="empty wallet total" />
                     </div>
@@ -20,19 +20,19 @@ function MainContent() {
                     <img className="polygon-top" src={polygonTop1} alt="polygon" />
                     <span>54%</span>
                     <img className="polygon-bottom" src={polygonBottom} alt="polygon" />
-                </div>
+                </dshowReceiveModaliv>
                 <div>
                     <button>
                         <img src={buySrc} alt="Buy" />
                         <span>Buy</span>
                     </button>
-                    <button>
+                    <button onClick={() => setShowReceiveModal(true)}>
                         <img src={cardReceiveSrc} alt="card receive" />
                         <span>Receive</span>
                     </button>
                     <button>
                         <img src={cardSendSrc} alt="card send" />
-                        <span>Buy</span>
+                        <span>Send</span>
                     </button>
                 </div>
             </div>
